@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animal Adoption Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+        <form id="adoption-form">
+            <h2>ADOPT YOUR FAVOURITE HOME ANIMAL</h2>
+            
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Enter your full name" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="animal-select">Select Animal:</label>
+                <select id="animal-select" name="animal" required>
+                    <option value="">Choose an Animal</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="rabbit">Rabbit</option>
+                    <option value="hamster">Monkey</option>
+                    <option value="parrot">Parrot</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="adoption-reason">Why Do You Want to Adopt?</label>
+                <textarea 
+                    id="adoption-reason" 
+                    name="reason" 
+                    placeholder="Tell us why you want to adopt this animal"
+                    required
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Adoption Request</button>
+            </div>
+        </form>
+    </div>
+    <script src="task5.js"></script>
+</body>
+</html>
